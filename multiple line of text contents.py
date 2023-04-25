@@ -23,4 +23,4 @@ with open(file_name, "w") as f:
             continue
         # Ask again if the user enters anything else.
         else:
-            print("Invalid input. Please enter 'y' or 'n'.")
+            print("\033[91mInvalid input. Please enter 'y' or 'n'.\033[0m")
