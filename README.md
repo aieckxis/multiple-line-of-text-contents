@@ -1,5 +1,6 @@
 # Write multiple line of text contents into a text file
 This Python script creates a file with multiple lines of text in it. As long as the user does not say there are any more lines, it asks them to enter text lines and writes them to the file. The code has error handling to deal with incorrect user input, making sure that the program keeps asking the user for input until a valid one is entered.
+
 ## Usage
 Using Command Prompt:
 
@@ -39,3 +40,17 @@ If the user entered the letter 'y', the program will ask the user to enter new l
 but if the user entered the letter 'n', the program will exit the loop and the resulting text file "mylife.txt" contains the following lines of text:
 
 <img width="500" alt="image" src="https://user-images.githubusercontent.com/129574374/234227541-0b92b21d-8986-4141-a5f1-73c0e399a50a.png">
+
+## Code Explanation
+
+<img width="500" alt="image" src="https://user-images.githubusercontent.com/129574374/234244145-b6f2168e-671c-41a6-bab3-e84d2faab008.png">
+
+This code allows the user to enter multiple lines of text and writes them to a file called "mylife.txt". The line number 5 of code sets the filename as "mylife.txt". The with statement is used to ensure that the file is properly closed after it is opened. This also makes the code more concise. The open() function is called with the file name and the "w" mode parameter, which means that the file is opened in write mode.
+
+<img width="500" alt="image" src="https://user-images.githubusercontent.com/129574374/234244374-2245045f-b4e4-432c-b197-8f01dd82fec2.png">
+
+The program asked the user to enter their first name to be add in the variable of add_line. A while loop is used to continue asking the user for input until they indicate that there are no more lines to enter. The user is also asked to enter a line of text with the input() function, and the value is stored in the variable line. The write() method is used to add the line of text to the file, followed by a newline character (\n). The user is then prompted to indicate if there are more lines to be entered with the input() function, and the value is stored in the variable add_line.
+
+<img width="500" alt="image" src="https://user-images.githubusercontent.com/129574374/234244882-ae946eec-dae8-4826-8478-bbdc1c26e548.png">
+
+If the user enters "n", the break statement is used to exit the while loop. Or else, if the user enters "y", the continue statement is used to return to the beginning of the loop and prompt the user for another line of text. And if the user enters anything else, an error message is displayed and the loop is repeated until valid input is provided.
