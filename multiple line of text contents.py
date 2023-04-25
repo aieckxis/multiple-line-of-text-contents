@@ -22,3 +22,5 @@ with open(file_name, "w") as f:
         elif add_line.lower() == "y":
             continue
         # Ask again if the user enters anything else.
+        else:
+            print("Invalid input. Please enter 'y' or 'n'.")
