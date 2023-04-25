@@ -13,7 +13,12 @@ with open(file_name, "w") as f:
         line = input("Enter line: ")
         # Using the write() method, add the line to the file followed by a newline character.
         file_name.write(line + "\n")
-# Ask the user if there are more lines to enter.
-# Exit the loop if the user enters "n"
-# Ask for another line to enter if the user enters "y".
-# Ask again if the user enters anything else.
+        # Ask the user if there are more lines to enter.
+        add_line = input("Are there more lines " + first_name + "? ")
+        # Exit the loop if the user enters "n"
+        if add_line.lower() == "n":
+            break
+        # Ask for another line to enter if the user enters "y".
+        elif add_line.lower() == "y":
+            continue
+        # Ask again if the user enters anything else.
